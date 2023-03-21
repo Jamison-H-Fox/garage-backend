@@ -13,4 +13,10 @@ module.exports = {
       filename: './data/garage.db3'
     }
   },
+  production: {
+    ...common,
+    connection: {
+      filename: './data/garageProduction.db3'
+    }
+  },
 };
