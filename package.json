@@ -1,6 +1,7 @@
 {
   "name": "garage-backend",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "The backend for my garage project.",
   "main": "index.js",
   "private": true,
   "dependencies": {
@@ -22,5 +23,8 @@
     "migrate": "knex migrate:latest",
     "seed": "knex seed:run",
     "resetdb": "npm run rollback && npm run migrate && npm run seed"
+  },
+  "engines": {
+    "node": "18.13.0"
   }
 }
