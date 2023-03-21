@@ -25,6 +25,6 @@
     "resetdb": "npm run rollback && npm run migrate && npm run seed"
   },
   "engines": {
-    "node": "18.13.0"
+    "node": "18.x"
   }
 }
