@@ -44,6 +44,15 @@ const garageCars = [
     price: 84150,
     build_url: `https://www.gmc.com/suvs/yukon/sle-slt/build-and-price/summary?styleId=428107&rpo=L84,MHS,GU5,GAZ,A50,HI9,IOK,PEH,CWM,NHT,ZL6,Z6E,ZM1,RGC,G96,JL1,PTT,V03,F47,5JL,VTA,C3U,RIK,B3L,ATN,AAK,RIB,CAV,UV6,UKK,THS,UV2,TRO,TRG,UET,PZ8,UKV,NZH,&ss=H4sIAAAAAAAAAH1TTU+DQBB97cZ6NF78Az2btEI/E2OgRaALlMJCU+7ejDdP3o3xV/j7/BO6Q+lCzcS5sO/lzZvdmQHADfD5jcGHRP/pBf0iB3FnuPf+9rz5Qg8U1xB27kJEcxsiDnIIv5hAPHoLfXIqCGcygghCDcOthEi9AKKKxxBZqGGpHIjJJiKoXTJ/pTNU8qMDx9DK4XCoD8d6l7eZp8Z5ZYi6vAFkZQCVboEj9affEKTSgGq1EteKOpIl6oNYWQXHOuVfO6HZfVwfzrWP9oxxoBaZ0v5iykioga1E99UAaqgB1FgDNtGYcaLxABcN+3psbT0vk5i4ZDloiF4jSVYzjg0U8850HXS0UaOlibelFydWqQ4rm3Gk1Zy5fDY9dHyXjQPtirl85secJHSZIdHimcR8bTF3VnVjTomySVSZz7Jbhi08xbykkJJlS44t71iWW5Ri353d6fnlyGK05U5yWv0jmqZUU49JrCKuNP3LZjFwBRv3eICLNTz4CBAjwRYpdshwQEf6X/wCEQOHdYkEAAA=&postalCode=84005`,
   },
+  {
+    user_id: 2,
+    make: 'subaru',
+    model: 'outback',
+    trim: 'wilderness',
+    img_url: 'https://www.carscoops.com/wp-content/uploads/2021/04/2022-Subaru-Outback-Wildern.jpg',
+    price: 84150,
+    build_url: `https://www.subaru.com/build/OBK/PDI/summary.html`,
+  },
 ]
 
 exports.seed = async function(knex) {

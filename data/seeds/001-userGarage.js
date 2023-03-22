@@ -3,6 +3,10 @@ const users = [
     username: 'jamison',
     password: '1234'
   },
+  {
+    username: 'jonathan',
+    password: '1234'
+  }
 ]
 
 exports.seed = async function(knex) {
