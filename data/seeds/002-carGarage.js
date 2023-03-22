@@ -50,7 +50,7 @@ const garageCars = [
     model: 'outback',
     trim: 'wilderness',
     img_url: 'https://www.carscoops.com/wp-content/uploads/2021/04/2022-Subaru-Outback-Wildern.jpg',
-    price: 84150,
+    price: 39670,
     build_url: `https://www.subaru.com/build/OBK/PDI/summary.html`,
   },
 ]
