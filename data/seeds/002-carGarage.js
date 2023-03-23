@@ -36,7 +36,7 @@ const garageCars = [
     build_url: `https://www.gmc.com/trucks/sierra/1500/sle-elevation-slt/build-and-price/summary?styleId=427289&rpo=L87,MHS,GU5,Q89,QFL,RHF,GBA,A50,H9J,IOK,ULV,PDL,PZG,PZL,PZN,PZ9,S4D,VPS,NAA,S1O,AAO,VBJ,R7N,&ss=H4sIAAAAAAAAAH1RMVLDMBDc+CAlBQUzVBRuKMmQYLtDxrFNUBzHwk5wRQOTig9QpYCCT4POFjIMGq6RdnXa3ZMAnAAfzxi/ncJ7eoFXKzD3C4/eX/cP1xiB6xg0VRlIhgFomStQVs9A6TwCVesQtE6l3uWpPhAtSMwuQHm0AN2u7jQXC9PXN4ff18pEfupCX2cg3/f1pjftLC1gyQGIlV48Q+zQgS6ObWHPAei0FnAuCzifBTyeBTymBYUQDsMiZsOxYQ9gem8CB6tHHeTKNnLIlW3mZKWTLRwsv6yDTVnh0LCJCVQFhYnH7KNJxn9oY/IfDZPszEU1+fn4+47T7DRxWKsr6VCoZTOYNPHCIdeUyiHXbDd/5YAjnGOCS0QQmCPFEiUqKNxjgy2s1f/1BZcczBgXAwAA&postalCode=84005`,
   },
   {
-    user_id: 1,
+    user_id: 3,
     make: 'gmc',
     model: 'yukon',
     trim: 'at4',
@@ -52,6 +52,15 @@ const garageCars = [
     img_url: 'https://www.carscoops.com/wp-content/uploads/2021/04/2022-Subaru-Outback-Wildern.jpg',
     price: 39670,
     build_url: `https://www.subaru.com/build/OBK/PDI/summary.html`,
+  },
+  {
+    user_id: 3,
+    make: 'rivian',
+    model: 'r1s',
+    trim: 'adventure',
+    img_url: 'https://images.caricos.com/r/rivian/2021_rivian_r1s/images/2560x1440/2021_rivian_r1s_4_2560x1440.jpg',
+    price: 100750,
+    build_url: `https://images.caricos.com/r/rivian/2021_rivian_r1s/images/2560x1440/2021_rivian_r1s_4_2560x1440.jpg`,
   },
 ]
 
