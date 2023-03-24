@@ -1,7 +1,5 @@
 const db = require('../../data/db-config');
 
-console.log(db('cars'));
-
 module.exports = {
     findById,
     findAll,

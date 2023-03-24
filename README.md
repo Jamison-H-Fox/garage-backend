@@ -6,16 +6,17 @@ This project is conceived by me (not from a tutorial) and built from scratch to 
 ### Back End:
 - API w/ router endpoints
     - /cars
-        - [ ] GET - Load all cars into garage on load of component
-        - [ ] PUT - Update w/ form in garage
-        - [ ] POST - Order form in add page
-        - [ ] DELETE - Remove car in garage
+        - [ ] GET - Load all cars w matching user_id into garage on load of component
+        - [ ] PUT - Update appropriate car
+        - [ ] POST - Add new car
+        - [ ] DELETE - Remove appropriate car
     - /users
         - [ ] POST - register
         - [ ] POST - login
 - Middleware
-    - [ ] Clean username/password data before submitting
-    - [ ] Check username validity
+    - [ ] Clean username/password data before submitting???
+        <!-- Maybe not necessary because of validation in front end??? -->
+    - [ ] Check username existence
     - [ ] Restricted to block routes w/out authorization
 - Database structure
     - [x] Table for tracking vehicles
@@ -31,20 +32,19 @@ This project is conceived by me (not from a tutorial) and built from scratch to 
         - [x] user_id (auto-incrementing)
         - [x] username (required, unique)
         - [x] password (required)
-        - [ ] session???
     - [x] Foreign keys to assign vehicle to user
-    - [ ] Users for session storage
 - Database access
     - Users
         - [ ] findBy(username) to verify existence
-        - [ ] add() to register new user
+        - [ ] insertUser() to register new user
+        - [ ] something to login???
     - Cars
-        - [ ] add() to add new car
-        - [ ] update() to modify existing car
-        - [ ] find() to find all cars matching user
-        - [ ] delete() to delete indicated car
-    - [ ] db for basic CRUD stuff
-    - [ ] seeds and migrations
+        - [ ] findAll() to find all cars matching user
+        - [ ] insertCar() to add new car
+        - [ ] updateCar() to modify existing car
+        - [ ] deleteCar() to delete indicated car
+    - [x] seeds and migrations
 - Authentication and protected routes
-    - [ ] Protect welcome, add, and garage pages
-    - [ ] Store sessions in db for persistence
+    - [ ] Protect welcome, garage, add, update, delete and delete pages
+    - [x] JWT for authentication
+    <!-- JWT doesn't allow for logout. Switch to session storage??? -->
