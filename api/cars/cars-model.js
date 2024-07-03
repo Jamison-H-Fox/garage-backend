@@ -23,6 +23,9 @@ function findByMake(carMake) {
 
 async function insertCar(car) {
   const newCarId = await db('cars').insert(car)
+  if (!newCarId) {
+    throw new Error('Failed to insert new car');
+  }
   return findById(newCarId)
 }
 
