@@ -1,38 +1,41 @@
-const db = require('../../data/db-config');
+const db = require('../../data/db-config')
 
 module.exports = {
-    findById,
-    findAll,
-    findByMake,
-    updateCar,
-    insertCar,
-    deleteCar,
+  findById,
+  findAll,
+  findByMake,
+  updateCar,
+  insertCar,
+  deleteCar,
 }
 
 function findById(id) {
-    return db('cars').where('car_id', id).first()
+  return db('cars').where('car_id', id).first()
 }
 
 function findAll() {
-    return db('cars')
+  return db('cars')
 }
 
 function findByMake(carMake) {
-    return db('cars').where('make', carMake)
+  return db('cars').where('make', carMake)
 }
 
 async function insertCar(car) {
-    const newCarId = await db('cars').insert(car)
-    return findById(newCarId);
+  const newCarId = await db('cars').insert(car)
+  if (!newCarId) {
+    throw new Error('Failed to insert new car');
+  }
+  return findById(newCarId)
 }
 
 async function updateCar(id, updates) {
-    await db('cars').where('car_id', id).update(updates)
-    return findById(id)
+  await db('cars').where('car_id', id).update(updates)
+  return findById(id)
 }
 
 async function deleteCar(id) {
-    const deletedCar = await findById(id)
-    await db('cars').where('car_id', id).del()
-    return deletedCar;
+  const deletedCar = await findById(id)
+  await db('cars').where('car_id', id).del()
+  return deletedCar
 }
